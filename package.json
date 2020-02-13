@@ -1,0 +1,21 @@
+{
+  "name": "superunion_code_test",
+  "version": "1.0.0",
+  "description": "The code test for Superunion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-resolve": "^1.11.3",
+    "esmify": "^2.1.1",
+    "three": "^0.113.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
+  }
+}

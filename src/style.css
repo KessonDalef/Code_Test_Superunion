@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    margin: 0;
+    padding: 0;
+    touch-action: none;
+}
+
+/*  the two texts appearing at the end of the draw */
+.textOne {
+    font-family: monospace;
+    position: absolute;
+    text-align: right;
+    color: #000;
+    font-size: 1vw;
+    letter-spacing: 0.25vw;
+    background-color: transparent;
+    z-index: 1;
+    font-weight: regular;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+}
+
+.textTwo {
+    font-family: monospace;
+    position: absolute;
+    text-align: left;
+    color: #000;
+    font-size: 1vw;
+    letter-spacing: 0.25vw;
+    background-color: transparent;
+    z-index: 1;
+    font-weight: regular;
+    transform: translate(0, -50%);
+    opacity: 0;
+}
+
+/* Intro animation of texts */
+.textOne.intro {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    opacity: 1;
+}
+
+.textTwo.intro {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .textOne {
+        font-family: monospace;
+        position: absolute;
+        text-align: right;
+        color: #000;
+        font-size: 4vw;
+        letter-spacing: 0.25vw;
+        background-color: transparent;
+        z-index: 1;
+        font-weight: regular;
+        transform: translate(-100%, -50%);
+        opacity: 0;
+    }
+
+    .textTwo {
+        font-family: monospace;
+        position: absolute;
+        text-align: left;
+        color: #000;
+        font-size: 4vw;
+        letter-spacing: 0.25vw;
+        background-color: transparent;
+        z-index: 1;
+        font-weight: regular;
+        transform: translate(0, -50%);
+        opacity: 0;
+    }
+}
